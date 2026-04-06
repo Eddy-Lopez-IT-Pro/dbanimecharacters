@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dragon Ball Character Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>🐉 Dragon Ball Character Explorer</h1>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search characters..."
+        />
+    </header>
+
+    <main>
+        <div id="characterContainer" class="grid"></div>
+        <button id="loadMoreBtn">Load More</button>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="" />
+            </div>
+
+            <div class="modal-info">
+                <h2 id="modalName"></h2>
+                <p><strong>Race:</strong> <span id="modalRace"></span></p>
+                <p><strong>Gender:</strong> <span id="modalGender"></span></p>
+                <p><strong>Ki:</strong> <span id="modalKi"></span></p>
+                <p><strong>Max Ki:</strong> <span id="modalMaxKi"></span></p>
+                <p><strong>Affiliation:</strong> <span id="modalAffiliation"></span></p>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
